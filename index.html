@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneUp</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
 </head>
 <body>
     <header>
         <div class="alinhamento">
-            <img src="imagens-oneup/Menu.svg" alt="menu">
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <h1>OneUp</h1>
             <img src="imagens-oneup/user.svg" alt="perfil">
         </div>
@@ -25,20 +31,30 @@
             </section>
         </article>
 
-        <article>
+        <article id="star-course-container">
             <h1 class="titulo">Cursos em destaque</h1>
             <section id="courses">
-                <div id="container">
+                <div class="courses-container">
+                    <img src="imagens-oneup/imagem2.png" alt="">
+                    <h1 class="developer">DESENVOLVEDOR FRONT-END</h1>
+                    <p class="pp">Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
+                    <a class="link" href="">Inscreva-se agora</a>
+                </div>
+                <div class="courses-container">
                     <img src="imagens-oneup/imagem2.png" alt="">
                     <h1 class="developer">Desenvolvedor Front-End</h1>
                     <p class="pp">Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
                     <a class="link" href="">Inscreva-se agora</a>
                 </div>
+                
+                
             </section>
+            
+            <a class="explore">Explore os cursos</a>
+            
+            <section id="question-container">
 
-            <button><h2>Explore os cursos</h2></button>
-
-            <section>
+                
                 <h2>Aprenda conosco</h2>
                 <p>Aprenda com as ótimas didáticos dos nossos professores nos cursos técnicos. Iremos te ensinar de maneira simples e intuitiva, no teórico e na prática.</p>
 
@@ -53,21 +69,31 @@
         <hr>
     <footer>
         <h2>OneUp</h2>
-        <h3>Cursos</h3>
-        <p><a href="">Cursos Técnicos</a></p>
-        <p><a href="">Inscrições Abertas</a></p>
-        <p><a href="">Bolsas Abertas</a></p>
+        <ul id="footer-courses">
+            <h3>Cursos</h3>
+            <p><a href="">Cursos Técnicos</a></p>
+            <p><a href="">Inscrições Abertas</a></p>
+            <p><a href="">Bolsas Abertas</a></p>
+        </ul>
 
-        <h3>Ajuda</h3>
-        
-        <p><a href="">Fale Conosco</a></p>
+        <ul id="footer-help">
+            <h3>Ajuda</h3>
+            <p><a href="">Fale Conosco</a></p>
+        </ul>
 
-        <h3>Peril</h3>
-        <p><a href="">Cadastro</a></p>
-        <p><a href="">Log In</a></p>
-        <p><a href="">Identidade</a></p>
-        <p><a href="">Matrículas</a></p>
+        <ul id="footer-profile">
+            <h3>Perfil</h3>
+            <p><a href="">Cadastro</a></p>
+            <p><a href="">Log In</a></p>
+            <p><a href="">Identidade</a></p>
+            <p><a href="">Matrículas</a></p>
+        </ul>
 
     </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
